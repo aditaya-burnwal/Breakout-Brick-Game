@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+       
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <div id="box">
+       
+         <span style="font-size:500%;color:yellow;margin-left: 35px; ">&starf;</span>
+         <span style="font-size:500%;color:yellow;margin-left: 20px;">&starf;</span>
+         <span style="font-size:500%;color:yellow;margin-left: 20px;">&starf;</span>
+         <h1 id="line">0</h1><br><br><br>
+         <!-- <a href="page1.html"> <input type="image" src="https://cdn2.iconfinder.com/data/icons/basic-office-snippets/170/Basic_Office-3-512.png" alt="Submit" style="float:left" width="48" height="48"></a> -->
+        <a href="page2.html"><input type="image" src="https://img.icons8.com/material/452/restart--v1.png" alt="Submit" name="submit" style="float:left; background-color: #ffcd05;border: 2px solid white; box-shadow: 2px 2px 5px rgb(97, 92, 92);border-radius: 6px;" width="48" height="48"></a>
+
+        </div>
+        
+        <script src="components.js"></script>
+        <script>
+          let score =  sessionStorage.getItem("SCORE")
+          const line = document.getElementById('line')
+          line.innerText = `Score : ${score}`
+        </script>
+    </body>
+</html>
